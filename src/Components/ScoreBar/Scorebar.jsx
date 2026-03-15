@@ -3,7 +3,7 @@ import { useMole } from "../MoleContext/MoleContext";
 function Scorebar() {
   const { score, restart } = useMole();
   return (
-    <div>
+    <div id="scoreDiv">
       <p className="scoreCard">Score: {score}</p>
       <button className="restartButton" onClick={restart}>
         Restart

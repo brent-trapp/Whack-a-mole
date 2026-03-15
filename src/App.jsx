@@ -6,7 +6,7 @@ import WelcomePage from "./Components/WelcomePage/WelcomePage";
 export default function App() {
   const { gameOn } = useMole();
   return (
-    <>
+    <div id="app">
       <h1>Whack-A-Mole</h1>
       {gameOn ? (
         <>
@@ -16,6 +16,6 @@ export default function App() {
       ) : (
         <WelcomePage />
       )}
-    </>
+    </div>
   );
 }
