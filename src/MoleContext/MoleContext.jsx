@@ -8,10 +8,11 @@ export function MoleProvider({ children }) {
 
   const mole = moleUp ? "up" : "down";
   const whackMole = () => setMoleUp(!moleUp);
-  const scoreIncrement = score;
+  const Score = score;
+  const scoreIncrement = setScore(score + 1);
   const restartGame = setScore(0);
 
-  const values = { mole, whackMole, scoreIncrement, restartGame };
+  const values = { mole, whackMole, Score, scoreIncrement, restartGame };
   return (
     <MoleContext.Provider values={values}>{children}</MoleContext.Provider>
   );
